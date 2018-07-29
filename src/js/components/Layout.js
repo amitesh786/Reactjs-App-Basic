@@ -2,10 +2,13 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
-export default class Layout extends React.Component {
+class Layout extends React.Component {
+    
     constructor() {
         super();
+        this.name = "Amitesh";
         this.state = {
+            name: "Amitesh",
             title: "Welcome",
         };
     }
@@ -15,12 +18,19 @@ export default class Layout extends React.Component {
     }
 
     render() {
+        // Set the timeout 
+        setTimeout( () =>{
+            this.setState({name: "Singh"});
+        }, 1000)
+
         return (
             <div>
-                <h1>It works</h1>
+                <h1>It works {this.name}</h1>
+
                 <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
                 <Footer />
             </div>
         );
     }
 }
+export default Layout;
