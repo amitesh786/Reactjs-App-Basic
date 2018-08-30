@@ -23,7 +23,6 @@ class Layout extends React.Component {
         return (
             <div>
                 <h1>It works {this.state.title}</h1>
-
                 <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
 
                 <Footer />
