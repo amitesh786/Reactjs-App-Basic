@@ -18,9 +18,9 @@ import RouterExample from "./pages/RouterExample";
 import BasicExample from "./pages/BasicExample";
 
 // const app = document.getElementById('app');
-import React from 'react'
-import { render } from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
+// import React from 'react'
+import { render } from 'react-dom';
+// import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
 
 render((
@@ -30,8 +30,6 @@ render((
         </App>
     </BrowserRouter>
 ), document.getElementById('root'));
-
-
 
 // ReactDOM.render(
 //     <BrowserRouter>
