@@ -20,16 +20,18 @@ import BasicExample from "./pages/BasicExample";
 // const app = document.getElementById('app');
 // import React from 'react'
 import { render } from 'react-dom';
-// import { BrowserRouter } from 'react-router-dom';
-import App from './components/App';
+// import App from './components/App';
+import Game from './pages/Game';
 
 render((
     <BrowserRouter>
-        <App >
-            <BasicExample />
-        </App>
+        {/* <App > */}
+            {/* <BasicExample /> */}
+        <Game/>
+        {/* </App> */}
     </BrowserRouter>
-), document.getElementById('root'));
+
+), document.getElementById('app'));
 
 // ReactDOM.render(
 //     <BrowserRouter>
